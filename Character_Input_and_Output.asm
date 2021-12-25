@@ -1,3 +1,6 @@
+; We have to move 1 in AH register and then call 21h interrupt to take a character input. Then we get the input character in AL.
+; To display any character we have to move it to the DX(or DL) register and then mov 02h to AH and call 21h interrupt.
+
 .model small
 .stack 100h
 .data
